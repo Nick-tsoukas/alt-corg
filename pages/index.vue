@@ -72,6 +72,7 @@
     <!-- end of home page hero image and inro columns -->
     <!-- ============================================= -->
     <HomeCta />
+    <MeetCorgis />
     <!-- SANCTUARY MEMBERS/HELP SUPPORT CRS cards -->
 
     <!-- 4 SUPPORT CRS/HOW YOU CAN HELP section  -->
@@ -172,7 +173,7 @@ p {
   font-family: 'Montserrat', sans-serif;
   font-size: 42px;
   color: #a5a3a3;
-  font-weight: 100;
+  font-weight: normal;
 }
   .grad_box {
     position: absolute;
@@ -203,5 +204,47 @@ p {
     background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #414345, #232526); 
   }
+  
+  /* media query  */
+  /* first one is dog image class 360 by 640 */
+  @media screen and (max-width: 1100px) {
+    .sub_header_text {
+      font-weight: normal;
+      color: white;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .home_grid {
+      padding-bottom: 4em;
+    }
+  .dog_image {
+    max-height: 250px;
+  }
+  .grad_box {
+    max-height: 250px;
+  }
+
+  .header_text {
+    font-size: 24px;
+  }
+  .sub_header_text {
+    font-size: 16px;
+    font-weight: normal;
+    padding-top: 1em;
+    color: white;
+  }
+
+  .grad_box {
+     padding-left: 2%;
+     padding-right: 2%;
+  }
+  /* home grid */
+  .home_grid {
+   display: flex;
+   flex-direction: column;
+   height: auto;
+  }
+}
+
 </style>
 
